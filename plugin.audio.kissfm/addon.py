@@ -4,7 +4,7 @@ import xbmcplugin
 
 addon_handle = int(sys.argv[1])
 
-xbmcplugin.setContent(addon_handle, 'audio')
+xbmcplugin.setContent(addon_handle, 'movies')
 url = 'http://live-kiss.sharp-stream.com/kiss100.aac'
 li = xbmcgui.ListItem('Kiss FM UK - National', iconImage='http://www.industrytrust.co.uk/wp-content/uploads/2014/01/Kiss-logo.jpg', thumbnailImage='http://www.kissfm.md/web/img/site/logo.png')
 li.setProperty('fanart_image', 'https://www.taolasvegas.com/files/2016/06/TAO_nightclub-2016-2.jpg')
