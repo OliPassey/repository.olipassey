@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.londonlive" name="London Live" version="0.4" provider-name="DoubleT">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">London Live - Live Stream</summary>
+    <description lang="en">LondonLive.co.uk</description>
+    <disclaimer lang="en"></disclaimer>
+    <language>English</language>
+    <platform>all</platform>
+    <license></license>
+    <forum>http://forum.xbmc.org/showthread.php?tid=190935</forum>
+    <website>http://www.londonlive.co.uk</website>
+    <email>oli@whitenoisehq.co.uk</email>
+    <source></source>
+  </extension>
+</addon>

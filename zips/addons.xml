@@ -1,5 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
+<addon id="plugin.audio.kissfm" name="Kiss FM UK" version="0.2" provider-name="DoubleT">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>audio</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Kiss FM UK - Live Stream</summary>
+    <description lang="en">KissFMUK.com</description>
+    <disclaimer lang="en"></disclaimer>
+    <language>English</language>
+    <platform>all</platform>
+    <license></license>
+    <forum></forum>
+    <website>http://www.kissfmuk.com</website>
+    <email>oli@whitenoisehq.co.uk</email>
+    <source></source>
+  </extension>
+</addon>
+
+<addon id="plugin.audio.rinsefm" name="Rinse.FM" version="0.2" provider-name="DoubleT">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>audio</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Rinse.FM - Live Stream</summary>
+    <description lang="en">RinseFM live from Brick Lane, London</description>
+    <disclaimer lang="en"></disclaimer>
+    <language>English</language>
+    <platform>all</platform>
+    <license></license>
+    <forum></forum>
+    <website>http://rinse.fm</website>
+    <email>oli@whitenoisehq.co.uk</email>
+    <source></source>
+  </extension>
+</addon>
+
 <addon id="plugin.video.blogscraper" name="VidGrab" version="0.0.1" provider-name="Oli Passey">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
@@ -19,6 +61,46 @@
 		<video_guide></video_guide>
 		<video_preview></video_preview>
 	</extension>
+</addon>
+
+<addon id="plugin.video.londonlive" name="London Live" version="0.4" provider-name="DoubleT">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">London Live - Live Stream</summary>
+    <description lang="en">LondonLive.co.uk</description>
+    <disclaimer lang="en"></disclaimer>
+    <language>English</language>
+    <platform>all</platform>
+    <license></license>
+    <forum>http://forum.xbmc.org/showthread.php?tid=190935</forum>
+    <website>http://www.londonlive.co.uk</website>
+    <email>oli@whitenoisehq.co.uk</email>
+    <source></source>
+  </extension>
+</addon>
+
+<addon id="plugin.video.wnhq"
+       name="WhiteNoiseHQ"
+       version="0.3"
+       provider-name="WNHQ">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">White Noise HQ live on your TV!</summary>
+    <language>en</language>
+    <description lang="en">Keep up to date with the latest from everyone at White Noise HQ!</description>
+     <platform>all</platform>
+  </extension>
 </addon>
 
 <addon id="repository.olipassey" name="olipassey's kodi repo" version="0.0.1" provider-name="Oli Passey">

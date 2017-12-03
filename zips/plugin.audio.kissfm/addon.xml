@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.audio.kissfm" name="Kiss FM UK" version="0.2" provider-name="DoubleT">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>audio</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Kiss FM UK - Live Stream</summary>
+    <description lang="en">KissFMUK.com</description>
+    <disclaimer lang="en"></disclaimer>
+    <language>English</language>
+    <platform>all</platform>
+    <license></license>
+    <forum></forum>
+    <website>http://www.kissfmuk.com</website>
+    <email>oli@whitenoisehq.co.uk</email>
+    <source></source>
+  </extension>
+</addon>

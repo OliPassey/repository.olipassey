@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.wnhq"
+       name="WhiteNoiseHQ"
+       version="0.3"
+       provider-name="WNHQ">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">White Noise HQ live on your TV!</summary>
+    <language>en</language>
+    <description lang="en">Keep up to date with the latest from everyone at White Noise HQ!</description>
+     <platform>all</platform>
+  </extension>
+</addon>

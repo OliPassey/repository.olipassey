@@ -1,0 +1,22 @@
+ <scraper name="dummy" content="movies" thumb="imdb.gif" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+       <NfoUrl dest="3">
+           <RegExp input="$$1" output="\1" dest="3">
+               <expression></expression>
+           </RegExp>
+       </NfoUrl>
+       <CreateSearchUrl dest="3">
+           <RegExp input="$$1" output="<url>http://www.nada.com</url>" dest="3">
+               <expression></expression>
+           </RegExp>
+       </CreateSearchUrl>
+       <GetSearchResults dest="8">
+           <RegExp input="$$1" output="<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?><results><entity><title>Dummy</title><url>http://www.nada.com</url></entity>" dest="8">
+               <expression></expression>
+           </RegExp>
+       </GetSearchResults>
+       <GetDetails dest="3">
+           <RegExp input="$$1" output="<details><title>The Dummy Movie</title><year>2008</year><director>Dummy Dumb</director><tagline>Some dumb dummies</tagline><credits>Dummy Dumb</credits><actor><name>Dummy Dumb</name><role>The dumb dummy</role></actor><outline></outline><plot>Some dummies doing dumb things</plot></details>" dest="3">
+               <expression></expression>
+           </RegExp>
+       </GetDetails>
+   </scraper>
