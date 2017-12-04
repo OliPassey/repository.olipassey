@@ -64,9 +64,9 @@ BASE  = "plugin://plugin.video.youtube/playlist/"
 BASE2 = "plugin://plugin.video.youtube/channel/"
 
 # Set each of your YouTube playlist id's
-YOUTUBE_CHANNEL_ID_1 = "PLRjomIk8urmEj_1boB4qG-sJfLLfbJqq2"
-YOUTUBE_CHANNEL_ID_2 = "PLnDj4GODT_QpaemQB4395I9wRwCnZvx6x"
-YOUTUBE_CHANNEL_ID_3 = "PLfb8E7lARImvzrAq0O6jyQcstw7aKZvLq"
+YOUTUBE_CHANNEL_ID_1 = "PL9fPq3eQfaaDOo8mTBHhEHMfuG2LNUSTC"
+YOUTUBE_CHANNEL_ID_2 = "PLTibR1K5pEHgBoz2y8Guytjry8m-4nwcd"
+YOUTUBE_CHANNEL_ID_3 = "PLC474234E124B5213"
 YOUTUBE_CHANNEL_ID_4 = "PLlJDPmb6OexrDnAFNBNJez8zRe4EECDZY"
 YOUTUBE_CHANNEL_ID_5 = "UCBDT-Kl4nHgEvpwYfLb315w"
 
@@ -109,15 +109,15 @@ def Main_Menu():
         
 # Add some YT Playlists (see we're using BASE as the url)
     Add_Dir( 
-        name="Popular Fly Fishing Videos", url=BASE+YOUTUBE_CHANNEL_ID_1+"/", folder=True,
+        name="DEF CON 25 (2017)", url=BASE+YOUTUBE_CHANNEL_ID_1+"/", folder=True,
         icon="http://www.free-icons-download.net/images/fishing-icons-23810.png")
 
     Add_Dir( 
-        name="Fly TV", url=BASE+YOUTUBE_CHANNEL_ID_2+"/", folder=True,
+        name="YouTube Housey Mix", url=BASE+YOUTUBE_CHANNEL_ID_2+"/", folder=True,
         icon="https://yt3.ggpht.com/-ldvmtOEepRk/AAAAAAAAAAI/AAAAAAAAAAA/OOEsBMgcqQI/s100-c-k-no-mo-rj-c0xffffff/photo.jpg")
 
     Add_Dir( 
-        name="Fishing videos from DALLMYD", url=BASE+YOUTUBE_CHANNEL_ID_3+"/", folder=True,
+        name="SpaceX: Launches", url=BASE+YOUTUBE_CHANNEL_ID_3+"/", folder=True,
         icon="https://yt3.ggpht.com/-HB9PwSeNSE8/AAAAAAAAAAI/AAAAAAAAAAA/LmADXY0mgbA/s100-c-k-no-mo-rj-c0xffffff/photo.jpg")
 
     Add_Dir( 
