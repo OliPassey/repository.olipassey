@@ -67,8 +67,8 @@ BASE2 = "plugin://plugin.video.youtube/channel/"
 YOUTUBE_CHANNEL_ID_1 = "PL9fPq3eQfaaDOo8mTBHhEHMfuG2LNUSTC"
 YOUTUBE_CHANNEL_ID_2 = "PLTibR1K5pEHgBoz2y8Guytjry8m-4nwcd"
 YOUTUBE_CHANNEL_ID_3 = "PLC474234E124B5213"
-YOUTUBE_CHANNEL_ID_4 = "PLlJDPmb6OexrDnAFNBNJez8zRe4EECDZY"
-YOUTUBE_CHANNEL_ID_5 = "UCBDT-Kl4nHgEvpwYfLb315w"
+YOUTUBE_CHANNEL_ID_4 = "PLR3SowCQah02FYPAFXOFH2Vy1qcAmIJ_A"
+YOUTUBE_CHANNEL_ID_5 = "UCur4HQg-2EQltweoKQfwOfg"
 
 #----------------------------------------------------------------
 
@@ -121,12 +121,12 @@ def Main_Menu():
         icon="https://yt3.ggpht.com/-HB9PwSeNSE8/AAAAAAAAAAI/AAAAAAAAAAA/LmADXY0mgbA/s100-c-k-no-mo-rj-c0xffffff/photo.jpg")
 
     Add_Dir( 
-        name="Sea Fishing videos from TAFishing", url=BASE+YOUTUBE_CHANNEL_ID_4+"/", folder=True,
+        name="Documentary Playlist", url=BASE+YOUTUBE_CHANNEL_ID_4+"/", folder=True,
         icon="https://yt3.ggpht.com/-P2USlMtGNXo/AAAAAAAAAAI/AAAAAAAAAAA/sDV3FPYrotM/s100-c-k-no-mo-rj-c0xffffff/photo.jpg")
 
 # Add some YT channels (see we're using BASE2 as the url for this one)
     Add_Dir( 
-        name="Uncut Angling Channel", url=BASE2+YOUTUBE_CHANNEL_ID_5+"/", folder=True,
+        name="DEF CON Channel", url=BASE2+YOUTUBE_CHANNEL_ID_5+"/", folder=True,
         icon="https://yt3.ggpht.com/-8Rt7LjDZrtU/AAAAAAAAAAI/AAAAAAAAAAA/-0-9PLOJWXM/s100-c-k-no-mo-rj-c0xffffff/photo.jpg")
 #----------------------------------------------------------------
 # A basic OK Dialog
