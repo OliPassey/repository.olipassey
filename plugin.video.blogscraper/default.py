@@ -67,7 +67,7 @@ BASE2 = "plugin://plugin.video.youtube/channel/"
 YOUTUBE_CHANNEL_ID_1 = "PL9fPq3eQfaaDOo8mTBHhEHMfuG2LNUSTC"
 YOUTUBE_CHANNEL_ID_2 = "PLTibR1K5pEHgBoz2y8Guytjry8m-4nwcd"
 YOUTUBE_CHANNEL_ID_3 = "PLC474234E124B5213"
-YOUTUBE_CHANNEL_ID_4 = "PLR3SowCQah02FYPAFXOFH2Vy1qcAmIJ_A"
+YOUTUBE_CHANNEL_ID_4 = "PL9fPq3eQfaaAvXV3hJc4yHuNxoviVckoE"
 YOUTUBE_CHANNEL_ID_5 = "UCur4HQg-2EQltweoKQfwOfg"
 
 #----------------------------------------------------------------
@@ -110,24 +110,24 @@ def Main_Menu():
 # Add some YT Playlists (see we're using BASE as the url)
     Add_Dir( 
         name="DEF CON 25 (2017)", url=BASE+YOUTUBE_CHANNEL_ID_1+"/", folder=True,
-        icon="http://www.free-icons-download.net/images/fishing-icons-23810.png")
+        icon="https://i2.wp.com/itmeets.guru/wp-content/uploads/2017/05/Untitled-design-2.jpg?resize=642%2C360&ssl=1")
 
     Add_Dir( 
         name="YouTube Housey Mix", url=BASE+YOUTUBE_CHANNEL_ID_2+"/", folder=True,
-        icon="https://yt3.ggpht.com/-ldvmtOEepRk/AAAAAAAAAAI/AAAAAAAAAAA/OOEsBMgcqQI/s100-c-k-no-mo-rj-c0xffffff/photo.jpg")
+        icon="http://mediad.publicbroadcasting.net/p/wcbu/files/styles/medium/public/201610/YouTube-logo.png")
 
     Add_Dir( 
         name="SpaceX: Launches", url=BASE+YOUTUBE_CHANNEL_ID_3+"/", folder=True,
-        icon="https://yt3.ggpht.com/-HB9PwSeNSE8/AAAAAAAAAAI/AAAAAAAAAAA/LmADXY0mgbA/s100-c-k-no-mo-rj-c0xffffff/photo.jpg")
+        icon="http://outerbusiness.com/wp-content/uploads/2015/09/spacex.jpg")
 
     Add_Dir( 
-        name="Documentary Playlist", url=BASE+YOUTUBE_CHANNEL_ID_4+"/", folder=True,
-        icon="https://yt3.ggpht.com/-P2USlMtGNXo/AAAAAAAAAAI/AAAAAAAAAAA/sDV3FPYrotM/s100-c-k-no-mo-rj-c0xffffff/photo.jpg")
+        name="DEF CON 24 (2016)", url=BASE+YOUTUBE_CHANNEL_ID_4+"/", folder=True,
+        icon="https://www.defcon.org/images/defcon-24/dc-24-logo-sm.png")
 
 # Add some YT channels (see we're using BASE2 as the url for this one)
     Add_Dir( 
-        name="DEF CON Channel", url=BASE2+YOUTUBE_CHANNEL_ID_5+"/", folder=True,
-        icon="https://yt3.ggpht.com/-8Rt7LjDZrtU/AAAAAAAAAAI/AAAAAAAAAAA/-0-9PLOJWXM/s100-c-k-no-mo-rj-c0xffffff/photo.jpg")
+        name="Oli's YouTube Channel", url=BASE2+YOUTUBE_CHANNEL_ID_5+"/", folder=True,
+        icon="http://mediad.publicbroadcasting.net/p/wcbu/files/styles/medium/public/201610/YouTube-logo.png")
 #----------------------------------------------------------------
 # A basic OK Dialog
 @route(mode='koding_settings')
