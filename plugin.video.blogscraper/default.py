@@ -95,13 +95,13 @@ YOUTUBE_CHANNEL_ID_5 = "UCur4HQg-2EQltweoKQfwOfg"
 def Main_Menu():
 
 # If debug mode is enabled show the koding tutorials
-    if debug == 'true':
-        Add_Dir ( '[COLOR=lime]Koding Tutorials[/COLOR]', '', "tutorials", True, '', '', '' )
-    else:
-        Add_Dir ( '[COLOR=lime]Enable debug mode for some cool dev tools![/COLOR]', '', "koding_settings", False, '', '', '' )
-    
+#    if debug == 'true':
+#        Add_Dir ( '[COLOR=lime]Koding Tutorials[/COLOR]', '', "tutorials", True, '', '', '' )
+#    else:
+#       Add_Dir ( '[COLOR=lime]Enable debug mode for some cool dev tools![/COLOR]', '', "koding_settings", False, '', '', '' )
+#    
 # An example title/message we're going to send through to a popup dialog in the first Add_Dir item
-    my_message= "{'title' : 'Support & Suggestions', 'msg' : \"If you come across any online content you'd like to get added please use the support thread at noobsandnerds.com and I'll be happy to look into it for you.\"}"
+#    my_message= "{'title' : 'Support & Suggestions', 'msg' : \"If you come across any online content you'd like to get added please use the support thread at noobsandnerds.com and I'll be happy to look into it for you.\"}"
 
     Add_Dir(
         name="Support/Suggestions", url=my_message, mode="simple_dialog", folder=False,
