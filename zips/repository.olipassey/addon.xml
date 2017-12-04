@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.olipassey" name="olipassey's kodi repo" version="0.0.1" provider-name="Oli Passey">
+<addon id="repository.olipassey" name="olipassey's kodi repo" version="0.0.2" provider-name="Oli Passey">
 	<extension point="xbmc.addon.repository" name="olipassey's kodi repo">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml</info>
@@ -12,7 +12,7 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Kodi Kontroller Required addons</summary>
-		<description lang="en">This repo mainly exists to keep my dashboards on a centralised repo underpinning Kodi Kontroller</description>
+		<description lang="en">More info at olipassey.me.uk</description>
 		<genre>tech,uk</genre>
 	</extension>
 </addon>
