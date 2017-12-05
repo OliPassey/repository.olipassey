@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.blogscraper" name="VidGrab" version="0.1.1" provider-name="Oli Passey">
+<addon id="plugin.video.blogscraper" name="olipassey.me VidRepo" version="0.1.2" provider-name="Oli Passey">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.python.koding.aio" version="0.0.1"/>
@@ -11,8 +11,8 @@
 		<summary lang="en">Grab videos from my blog</summary>
 		<description lang="en"></description>
 		<platform>all</platform>
-		<forum>http://www.noobsandnerds.com/support</forum>
-		<website>www.noobsandnerds.com</website>
+		<forum></forum>
+		<website>https://olipassey.me.uk</website>
 		<news></news>
 		<genre>tech,uk</genre>
 		<video_guide></video_guide>
