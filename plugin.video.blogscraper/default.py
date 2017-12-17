@@ -105,10 +105,6 @@ def Main_Menu():
         name="DEF CON 24 (2016)", url=BASE+YOUTUBE_CHANNEL_ID_4+"/", folder=True,
         icon="https://www.defcon.org/images/defcon-24/dc-24-logo-sm.png")
 
-	Add_Dir( 
-        name="YouTube Housey Mix", url=BASE+YOUTUBE_CHANNEL_ID_2+"/", folder=True,
-        icon="http://mediad.publicbroadcasting.net/p/wcbu/files/styles/medium/public/201610/YouTube-logo.png")
-
     Add_Dir( 
         name="SpaceX: Launches", url=BASE+YOUTUBE_CHANNEL_ID_3+"/", folder=True,
         icon="http://outerbusiness.com/wp-content/uploads/2015/09/spacex.jpg")
