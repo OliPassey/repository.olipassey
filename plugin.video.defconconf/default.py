@@ -129,9 +129,7 @@ def Main_Menu():
         icon="https://www.defcon.org/images/defcon-20/dc20-logo_smsq.png")		
 		
 # Add some YT channels (see we're using BASE2 as the url for this one)
-    Add_Dir( 
-        name="DEFCON Official YouTube Channel", url=BASE2+YOUTUBE_CHANNEL_ID_5+"/", folder=True,
-        icon="http://mediad.publicbroadcasting.net/p/wcbu/files/styles/medium/public/201610/YouTube-logo.png")
+
 #----------------------------------------------------------------
 # A basic OK Dialog
 @route(mode='koding_settings')
