@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.defconconf" name="DEF CON Talks" version="0.1.4" provider-name="Oli Passey">
+<addon id="plugin.video.defconconf" name="DEF CON Talks" version="0.1.5" provider-name="Oli Passey">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.python.koding.aio" version="0.0.1"/>
