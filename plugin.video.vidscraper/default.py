@@ -1,39 +1,11 @@
 # -*- coding: utf-8 -*-
 
-""" ^ SECTION 1:
-    This should be at the top of your code to declare the type of text
-    format you're using. Without this you may find some text editors save
-    it in an incompatible format and this can make bug tracking extremely
-    confusing! More info here: https://www.python.org/dev/peps/pep-0263/
-"""
-
-#----------------------------------------------------------------
-
-"""
-    SECTION 2:
-    This is where you'd put your license details, the GPL3 license 
-    is the most common to use as it makes it easy for others to fork
-    and improve upon your code. If you're re-using others code ALWAYS
-    check the license first, removal of licenses is NOT allowed and you
-    generally have to keep to the same license used in the original work
-    (check license details as some do differ).
-
-    Although not all licenses require it (some do, some don't),
-    you should always give credit to the original author(s). Someone may have spent
-    months if not years on the code so really it's the very least you can do if
-    you choose to use their work as a base for your own.
-"""
 # License: GPL (http://www.gnu.org/licenses/gpl-3.0.html)
-# Addon: My Python Koding Add-on
-# Author: Add your name here
+# Addon: VidScraper
+# Author: Oli Passey (DoubleT)
 
 #----------------------------------------------------------------
 
-"""
-    SECTION 3:
-    This is your global imports, any modules you need to import code from
-    are added here. You'll see a handful of the more common imports below.
-"""
 import os           # access operating system commands
 import urlparse     # splits up the directory path - much easier importing this than coding it up ourselves
 import xbmc         # the base xbmc functions, pretty much every add-on is going to need at least one function from here
@@ -51,13 +23,6 @@ from koding import route, Run # These are essential imports which allow us to op
 
 #----------------------------------------------------------------
 
-"""
-    SECTION 4:
-    These are our global variables, anything we set here can be accessed by any of
-    our functions later on. Please bare in mind though that if you change the value
-    of a global variable from inside a function the value will revert back to the
-    value set here once that function has completed.
-"""
 addon_id     = xbmcaddon.Addon().getAddonInfo('id') # Grab our add-on id
 dialog       = xbmcgui.Dialog()                     # A basic dialog message command
 home_folder  = xbmc.translatePath('special://home/')# Convert the special path of Kodi home folder to the physical path
