@@ -17,27 +17,27 @@ addon_id     = xbmcaddon.Addon().getAddonInfo('id')
 
 BASE  = "plugin://plugin.video.youtube/playlist/"
 BASE2 = "plugin://plugin.video.youtube/channel/"
+BASE3 = "plugin://plugin.video.youtube/play/?video_id="
 
 YOUTUBE_CHANNEL_ID_1 = "PLH15HpR5qRsXtpLirwYHPWyqcEFPbr-uB"
 YOUTUBE_CHANNEL_ID_2 = "PLH15HpR5qRsUyGhBVRDKGrHyQC5G4jQyd"
-YOUTUBE_CHANNEL_ID_2 = "PLH15HpR5qRsWx4qw9ZlgmisHOcKG4ZcRS"
+YOUTUBE_CHANNEL_ID_3 = "PLH15HpR5qRsWx4qw9ZlgmisHOcKG4ZcRS"
 
 
 @route(mode='main_menu')
 def Main_Menu():
-    Add_Dir( 
-        name="Black Hat Europe 2017", url=BASE+YOUTUBE_CHANNEL_ID_1+"/", folder=True,
-        icon="https://www.blackhat.com/images/page-graphics/metatag/event-logo-eu17.png")
+	Add_Dir( 
+		name="Black Hat Europe 2017", url=BASE+YOUTUBE_CHANNEL_ID_1+"/", folder=True,
+		icon="https://www.blackhat.com/images/page-graphics/metatag/event-logo-eu17.png")
+	
+	Add_Dir( 
+		name="Black Hat USA 2017", url=BASE+YOUTUBE_CHANNEL_ID_2+"/", folder=True,
+		icon="https://www.blackhat.com/images/page-graphics/metatag/event-logo-us17.png")
 
-def Main_Menu():
-    Add_Dir( 
-        name="Black Hat USA 2017", url=BASE+YOUTUBE_CHANNEL_ID_2+"/", folder=True,
-        icon="https://www.blackhat.com/images/page-graphics/metatag/event-logo-us17.png")
-		
-def Main_Menu():
-    Add_Dir( 
-        name="Black Hat Asia 2017", url=BASE+YOUTUBE_CHANNEL_ID_3+"/", folder=True,
-        icon="https://www.blackhat.com/images/page-graphics/metatag/event-logo-asia17.png")
+	Add_Dir( 
+		name="Black Hat Asia 2017", url=BASE+YOUTUBE_CHANNEL_ID_3+"/", folder=True,
+		icon="https://www.blackhat.com/images/page-graphics/metatag/event-logo-asia17.png")
+
 		
 @route(mode='koding_settings')
 def Koding_Settings():

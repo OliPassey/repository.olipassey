@@ -42,7 +42,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.blackhatconf" name="Black Hat Conference" version="0.1" provider-name="Oli Passey">
+<addon id="plugin.video.blackhatconf" name="Black Hat Conference" version="0.1.1" provider-name="Oli Passey">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.python.koding.aio" version="0.0.1"/>
