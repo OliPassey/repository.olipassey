@@ -1,10 +1,8 @@
 # -*- coding: utf-8 -*-
-
 # License: GPL (http://www.gnu.org/licenses/gpl-3.0.html)
 # Addon: DEF CON Talks
 # Author: Oli Passey (DoubleT)
 
-#----------------------------------------------------------------
 
 import os           
 import xbmc         
@@ -14,14 +12,12 @@ import xbmcplugin
 from koding import route, Addon_Setting, Add_Dir, Find_In_Text, Open_URL, OK_Dialog
 from koding import Open_Settings, Play_Video, Run, Text_File
 
-debug        = Addon_Setting(setting='debug')       # Grab the setting of our debug mode in add-on settings
-addon_id     = xbmcaddon.Addon().getAddonInfo('id') # Grab our add-on id
+debug        = Addon_Setting(setting='debug')       
+addon_id     = xbmcaddon.Addon().getAddonInfo('id') 
 
-# Set the base plugin url you want to hook into
 BASE  = "plugin://plugin.video.youtube/playlist/"
 BASE2 = "plugin://plugin.video.youtube/channel/"
 
-# Set each of your YouTube playlist id's
 YOUTUBE_CHANNEL_ID_1 = "PL9fPq3eQfaaDOo8mTBHhEHMfuG2LNUSTC"
 YOUTUBE_CHANNEL_ID_2 = "PL9fPq3eQfaaBCdjbKFYjosh1s1EkaYdsQ"
 YOUTUBE_CHANNEL_ID_3 = "PL9fPq3eQfaaBuHqVvDzPoWxznYYmyx5UX"
@@ -61,17 +57,13 @@ def Main_Menu():
         name="DEF CON 20 Documentary", url=BASE+YOUTUBE_CHANNEL_ID_7+"/", folder=True,
         icon="https://www.defcon.org/images/defcon-20/dc20-logo_smsq.png")		
 
-#----------------------------------------------------------------
-# A basic OK Dialog
 @route(mode='koding_settings')
 def Koding_Settings():
     Open_Settings()
-#----------------------------------------------------------------
-# A basic OK Dialog
+
 @route(mode='simple_dialog', args=['title','msg'])
 def Simple_Dialog(title,msg):
     OK_Dialog(title, msg)
-#----------------------------------------------------------------
 
 if __name__ == "__main__":
     Run(default='main_menu')
