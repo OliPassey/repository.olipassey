@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.blackhatconf" name="Black Hat Conference" version="0.1" provider-name="Oli Passey">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+        <import addon="script.module.python.koding.aio" version="0.0.1"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Talks and Presentations from the Black Hat USA, Europe and Asia</summary>
+		<description lang="en"></description>
+		<platform>all</platform>
+		<forum></forum>
+		<website>https://olipassey.me.uk</website>
+		<news></news>
+		<genre>tech,uk</genre>
+		<video_guide></video_guide>
+		<video_preview></video_preview>
+	</extension>
+</addon>
