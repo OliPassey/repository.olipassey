@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.vidscraper" name="VidScraper2" version="0.0.2" provider-name="olipassey">
+<addon id="plugin.video.foeewni" name="Friends of the Earth - England, Wales, Northern Ireland" version="0.1" provider-name="Oli Passey">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.python.koding.aio" version="0.0.1"/>
@@ -8,14 +8,15 @@
 		<provides>video</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Looking at code for scraping stuff from my blog</summary>
+		<summary lang="en">Videos from Friends of the Earth</summary>
 		<description lang="en"></description>
 		<platform>all</platform>
 		<forum></forum>
-		<website>olipassey.me.uk</website>
+		<website>https://friendsoftheearth.uk</website>
 		<news></news>
 		<genre>tech,uk</genre>
 		<video_guide></video_guide>
 		<video_preview></video_preview>
+		<broken>BETA</broken>
 	</extension>
 </addon>
