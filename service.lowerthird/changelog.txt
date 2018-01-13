@@ -1,0 +1,5 @@
+v0.1 	- Kodi Banners v1.9 by Lanik, forked to Kodi Lower Third, Oli Passey 2018
+		- This is being used as part of a larger project, Kodi Kontroller
+		- Huge thanks to Lanik, but to ensure control over a production code base i have forked his addon
+		- and will continue to develop to our specific needs.
+		- GNU GENERAL PUBLIC LICENSE v3 Applied and Respected
