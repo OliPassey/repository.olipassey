@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
     <category label="30000">
-        <setting id="off" label="30001" type="bool" default="true"/>
+        <setting id="on" label="30001" type="bool" default="false"/>
         <setting id="changetime" label="30002" type="slider" default="30" range="5,5,120" option="int"/>
         <setting id="cyclepause" label="30004" type="slider" default="30" range="0,10,240" option="int"/>
         <setting id="bannerpos" label="30003" type="enum" lvalues="30011|30012" default="1"/>
