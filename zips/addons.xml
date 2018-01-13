@@ -171,7 +171,7 @@
 
 <addon id="plugin.video.wnhq"
        name="WhiteNoiseHQ"
-       version="0.3"
+       version="0.4"
        provider-name="WNHQ">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -183,8 +183,9 @@
   <extension point="xbmc.addon.metadata">
     <summary lang="en">White Noise HQ live on your TV!</summary>
     <language>en</language>
-    <description lang="en">Keep up to date with the latest from everyone at White Noise HQ!</description>
+    <description lang="en">White Noise HQ is no longer operating, the back-end domain has gone away and will not be back.</description>
      <platform>all</platform>
+	 <broken>deprecated</broken>
   </extension>
 </addon>
 
