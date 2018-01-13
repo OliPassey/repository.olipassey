@@ -188,7 +188,7 @@
   </extension>
 </addon>
 
-<addon id="repository.olipassey" name="olipassey's kodi repo" version="0.0.2" provider-name="Oli Passey">
+<addon id="repository.olipassey" name="olipassey's repo" version="0.0.3" provider-name="Oli Passey">
 	<extension point="xbmc.addon.repository" name="olipassey's kodi repo">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml</info>
