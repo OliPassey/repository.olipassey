@@ -1,4 +1,4 @@
-# LowerThird
+![LowerThird Logo](https://github.com/OliPassey/repository.olipassey/raw/master/service.lowerthird/icon.png)
 #### by Oli Passey (Double T)
 https://olipassey.me.uk
 
