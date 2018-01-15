@@ -61,7 +61,7 @@ class OverlayText(object):
 
         self.imageBottom.setHeight(height)
         self.imageBottom.setWidth(width)
-        self.imageBottom.setPosition(xpos, viewport_h - height - yoffset)
+        self.imageBottom.setPosition(xpos, viewport_h - height)
 
         self.imageCenter.setHeight(height)
         self.imageCenter.setWidth(width)
