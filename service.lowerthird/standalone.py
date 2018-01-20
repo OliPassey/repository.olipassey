@@ -15,7 +15,31 @@ import urlparse
 import os
 import sys
 from PIL import Image
+from PIL import ImageFont
+from PIL import ImageDraw
 from xml.dom import minidom
+
+# ============================================================
+# Create lowerthird banners from API sent text
+# Won't work yet...
+# ============================================================
+
+def CreateLowerThird
+ # define the font path as local fonts dir in prj root
+ fonts_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'fonts')
+ font = ImageFont.truetype(os.path.join(fonts_path, 'sans_serif.ttf'), 24)
+ # font = ImageFont.truetype(<font-file>, <font-size>)
+ # font-file should be present in provided path.
+ font = ImageFont.truetype("sans-serif.ttf", 16)
+ img = Image.open("sample_in.jpg")
+ draw = ImageDraw.Draw(img)
+ # font = ImageFont.truetype(<font-file>, <font-size>)
+ font = ImageFont.truetype("sans-serif.ttf", 16)
+ # draw.text((x, y),"Sample Text",(r,g,b))
+ draw.text((0, 0),notitxt,(255,255,255),font=font)
+ img.save('sample-out.jpg')
+
+
 
 # ============================================================
 # Define Overlay Class
@@ -174,18 +198,20 @@ if __name__ == '__main__':
     try:
         params = urlparse.parse_qs('&'.join(sys.argv[1:]))
 
-        imageloc = params.get('imageloc', None)[0]
+        notitxt = params.get('notitxt', None)[0]
+		imageloc = params.get('imageloc', None)[0]
         displaytime = int(params.get('displaytime', None)[0])
         position = params.get('position', None)[0]
     except Exception:
         imageloc = None
         displaytime = None
         position = None
+		notitxt = None
 
-    if imageloc and displaytime and position:
+    if imageloc and displaytime and position and notitxt:
         success = xbmcvfs.exists(imageloc)
 
-        if success and displaytime > 1000 and displaytime < 60000 and (position == 'top' or position == 'bottom' or position == 'center'):
+        if success and displaytime > 1000 and displaytime < 300001 and (position == 'top' or position == 'bottom' or position == 'center'):
             xbmc.log("BANNERS >> STANDALONE DISPLAY IMAGE: " + str(imageloc) + " >> TIMEOUT: " + str(displaytime) + " >> POSITION: " + str(position))
             displayBanner(imageloc, displaytime, position)
         else:

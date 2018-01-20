@@ -13,6 +13,8 @@ import xbmcgui
 import os.path
 from random import randint
 from PIL import Image
+from PIL import ImageFont
+from PIL import ImageDraw
 from datetime import datetime as date
 from threading import Timer
 from xml.dom import minidom
