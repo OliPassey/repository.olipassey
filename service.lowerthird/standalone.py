@@ -24,20 +24,61 @@ from xml.dom import minidom
 # Won't work yet...
 # ============================================================
 
-def CreateLowerThird
- # define the font path as local fonts dir in prj root
- fonts_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'fonts')
- font = ImageFont.truetype(os.path.join(fonts_path, 'sans_serif.ttf'), 24)
- # font = ImageFont.truetype(<font-file>, <font-size>)
- # font-file should be present in provided path.
- font = ImageFont.truetype("sans-serif.ttf", 16)
- img = Image.open("sample_in.jpg")
- draw = ImageDraw.Draw(img)
- # font = ImageFont.truetype(<font-file>, <font-size>)
- font = ImageFont.truetype("sans-serif.ttf", 16)
- # draw.text((x, y),"Sample Text",(r,g,b))
- draw.text((0, 0),notitxt,(255,255,255),font=font)
- img.save('sample-out.jpg')
+class RealTimeNotifications
+	def CreateLowerThird
+	 # define the font path as local fonts dir in prj root
+	 fonts_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'fonts')
+	 font = ImageFont.truetype(os.path.join(fonts_path, 'sans_serif.ttf'), 24)
+	 # font = ImageFont.truetype(<font-file>, <font-size>)
+	 # font-file should be present in provided path.
+	 font = ImageFont.truetype("sans-serif.ttf", 16)
+	 img = Image.open("sample_in.jpg")
+	 draw = ImageDraw.Draw(img)
+	 # font = ImageFont.truetype(<font-file>, <font-size>)
+	 font = ImageFont.truetype("sans-serif.ttf", 16)
+	 # draw.text((x, y),"Sample Text",(r,g,b))
+	 draw.text((0, 0),notitxt,(255,255,255),font=font)
+	 img.save('sample-out.jpg')
+
+	def DisplayLowerThird(displaytime, position):
+		global myWidget
+		global intYOffset
+		global __addon__
+
+		__addon__ = xbmcaddon.Addon(id='service.lowerthird')
+
+		ActWin = xbmcgui.getCurrentWindowId()
+		myWidget = OverlayText(ActWin)
+		myWidget.show()
+
+		if position == 'top':
+			myWidget.imageBottom.setImage("")
+			myWidget.imageCenter.setImage("")
+			myWidget.imageTop.setImage("sample-out.jpg")
+		elif position == 'bottom':
+			myWidget.imageBottom.setImage("sample-out.jpg")
+			myWidget.imageCenter.setImage("")
+			myWidget.imageTop.setImage("")
+		else:
+			myWidget.imageBottom.setImage("")
+			myWidget.imageCenter.setImage("sample-out.jpg")
+			myWidget.imageTop.setImage("")
+
+		image = Image.open(open("sample-out.jpg", 'rb'))
+		width, height = image.size
+		myWidget.scaleimage(width, height, intYOffset)
+
+		xbmc.log('BANNERS >> STANDALONE INITIALIZING OVERLAY')
+
+		xbmc.sleep(displaytime)
+
+		try:
+			myWidget._close()
+		except Exception:
+			pass
+
+		myWidget = None
+
 
 
 
