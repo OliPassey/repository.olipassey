@@ -4,16 +4,16 @@
 # Author: Oli Passey (DoubleT)
 
 
-import os           
-import xbmc         
-import xbmcaddon    
-import xbmcplugin   
+import os
+import xbmc
+import xbmcaddon
+import xbmcplugin
 
 from koding import route, Addon_Setting, Add_Dir, Find_In_Text, Open_URL, OK_Dialog
 from koding import Open_Settings, Play_Video, Run, Text_File
 
-debug        = Addon_Setting(setting='debug')       
-addon_id     = xbmcaddon.Addon().getAddonInfo('id') 
+debug        = Addon_Setting(setting='debug')
+addon_id     = xbmcaddon.Addon().getAddonInfo('id')
 
 BASE  = "plugin://plugin.video.youtube/playlist/"
 BASE2 = "plugin://plugin.video.youtube/channel/"
@@ -26,36 +26,41 @@ YOUTUBE_CHANNEL_ID_5 = "UCur4HQg-2EQltweoKQfwOfg"
 YOUTUBE_CHANNEL_ID_6 = "PL9fPq3eQfaaBD_8E9PJ8yyiTL0JhynlGK"
 YOUTUBE_CHANNEL_ID_7 = "PL9fPq3eQfaaCIZajWLyN5f6M0HoU_Avuk"
 YOUTUBE_CHANNEL_ID_8 = "PL9fPq3eQfaaDcbIEMSzdL5yuzh_m6BB-E"
+YOUTUBE_CHANNEL_ID_9 = "PL9fPq3eQfaaD0cf5c7wkzMoj2kifzGO4U"
 
 @route(mode='main_menu')
 def Main_Menu():
-    Add_Dir( 
+    Add_Dir(
+        name="DEF CON 26 (2018)", url=BASE+YOUTUBE_CHANNEL_ID_9+"/", folder=True,
+        icon="https://www.defcon.org/images/defcon-26/post-images/defcon26-logo.png")
+
+    Add_Dir(
         name="DEF CON 25 (2017)", url=BASE+YOUTUBE_CHANNEL_ID_1+"/", folder=True,
         icon="https://www.defcon.org/images/defcon-25/post-images/dc-25-logo.jpg")
 
-    Add_Dir( 
+    Add_Dir(
         name="DEF CON 24 (2016)", url=BASE+YOUTUBE_CHANNEL_ID_4+"/", folder=True,
         icon="https://www.defcon.org/images/defcon-24/dc-24-logo-sm.png")
 
-    Add_Dir( 
+    Add_Dir(
         name="DEF CON 23 (2015)", url=BASE+YOUTUBE_CHANNEL_ID_3+"/", folder=True,
         icon="https://www.defcon.org/images/defcon-23/dc-23-logo-sm.jpg")
 
-    Add_Dir( 
+    Add_Dir(
         name="DEF CON 22 (2014)", url=BASE+YOUTUBE_CHANNEL_ID_2+"/", folder=True,
         icon="https://www.defcon.org/images/defcon-22/dc-22-web.jpg")
 
-    Add_Dir( 
+    Add_Dir(
         name="DEF CON 21 (2013)", url=BASE+YOUTUBE_CHANNEL_ID_6+"/", folder=True,
         icon="https://www.defcon.org/images/defcon-21/dc-21-logo-sm.png")
 
-    Add_Dir( 
+    Add_Dir(
         name="DEF CON 20 (2012)", url=BASE+YOUTUBE_CHANNEL_ID_8+"/", folder=True,
         icon="https://www.defcon.org/images/defcon-20/dc20-logo_smsq.png")
-		
-    Add_Dir( 
+
+    Add_Dir(
         name="DEF CON 20 Documentary", url=BASE+YOUTUBE_CHANNEL_ID_7+"/", folder=True,
-        icon="https://www.defcon.org/images/defcon-20/dc20-logo_smsq.png")		
+        icon="https://www.defcon.org/images/defcon-20/dc20-logo_smsq.png")
 
 @route(mode='koding_settings')
 def Koding_Settings():
