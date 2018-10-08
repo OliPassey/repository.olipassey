@@ -27,11 +27,12 @@ YOUTUBE_CHANNEL_ID_6 = "PLk1Sqn_f33Ku0Oa3t8MQjV7D_G_PBi8g1"
 YOUTUBE_CHANNEL_ID_7 = "PLk1Sqn_f33KtkaiY3M2r1LKmW3vB7UfE1"
 YOUTUBE_CHANNEL_ID_8 = "PLk1Sqn_f33KtA0OOlTxl7CHizKmKeD70T"
 YOUTUBE_CHANNEL_ID_9 = "PLk1Sqn_f33KuQyLE4RjEOdJ_-0epbcBb4"
+YOUTUBE_CHANNEL_ID_10 = "PLk1Sqn_f33KuS7ZSVMJqzFaqOyyl-esmG"
 
 @route(mode='main_menu')
 def Main_Menu():
     Add_Dir(
-        name="JRE #1001 - Current", url=BASE+YOUTUBE_CHANNEL_ID_6+"/", folder=True,
+        name="Latest Joe Rogram Experience", url=BASE+YOUTUBE_CHANNEL_ID_10+"/", folder=True,
         icon="https://yt3.ggpht.com/a-/AN66SAyJWj4wg2agMY20Ma5mrECrCy6m1nxzwuRO1w=s900-mo-c-c0xffffffff-rj-k-no")
 
     Add_Dir(
@@ -45,6 +46,10 @@ def Main_Menu():
     Add_Dir(
         name="Joe Rogan MMA Show", url=BASE+YOUTUBE_CHANNEL_ID_9+"/", folder=True,
         icon="https://i.ytimg.com/vi/PzNPk8iksls/hqdefault.jpg")
+
+    Add_Dir(
+        name="JRE #1001 - Current", url=BASE+YOUTUBE_CHANNEL_ID_6+"/", folder=True,
+        icon="https://yt3.ggpht.com/a-/AN66SAyJWj4wg2agMY20Ma5mrECrCy6m1nxzwuRO1w=s900-mo-c-c0xffffffff-rj-k-no")
 
     Add_Dir(
         name="JRE Archive #701 - 1000", url=BASE+YOUTUBE_CHANNEL_ID_5+"/", folder=True,
