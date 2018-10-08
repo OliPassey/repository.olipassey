@@ -36,19 +36,7 @@ def Main_Menu():
         icon="https://yt3.ggpht.com/a-/AN66SAyJWj4wg2agMY20Ma5mrECrCy6m1nxzwuRO1w=s900-mo-c-c0xffffffff-rj-k-no")
 
     Add_Dir(
-        name="Best of the week", url=BASE+YOUTUBE_CHANNEL_ID_7+"/", folder=True,
-        icon="https://yt3.ggpht.com/a-/AN66SAyJWj4wg2agMY20Ma5mrECrCy6m1nxzwuRO1w=s900-mo-c-c0xffffffff-rj-k-no")
-
-    Add_Dir(
-        name="Behind the scenes", url=BASE+YOUTUBE_CHANNEL_ID_8+"/", folder=True,
-        icon="https://yt3.ggpht.com/a-/AN66SAyJWj4wg2agMY20Ma5mrECrCy6m1nxzwuRO1w=s900-mo-c-c0xffffffff-rj-k-no")
-
-    Add_Dir(
-        name="Joe Rogan MMA Show", url=BASE+YOUTUBE_CHANNEL_ID_9+"/", folder=True,
-        icon="https://i.ytimg.com/vi/PzNPk8iksls/hqdefault.jpg")
-
-    Add_Dir(
-        name="JRE #1001 - Current", url=BASE+YOUTUBE_CHANNEL_ID_6+"/", folder=True,
+        name="JRE Archive #1001 - Current", url=BASE+YOUTUBE_CHANNEL_ID_6+"/", folder=True,
         icon="https://yt3.ggpht.com/a-/AN66SAyJWj4wg2agMY20Ma5mrECrCy6m1nxzwuRO1w=s900-mo-c-c0xffffffff-rj-k-no")
 
     Add_Dir(
