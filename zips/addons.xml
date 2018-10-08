@@ -127,27 +127,6 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.joeroganexperience" name="Joe Rogan Experience" version="0.1.4" provider-name="Oli Passey">
-	<requires>
-		<import addon="xbmc.python" version="2.19.0" />
-        <import addon="script.module.python.koding.aio" version="0.0.1"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Joe Rogan and guests chew the fat on YouTube</summary>
-		<description lang="en"></description>
-		<platform>all</platform>
-		<forum></forum>
-		<website>https://www.youtube.com/user/PowerfulJRE/featured</website>
-		<news></news>
-		<genre>podcast,conversation</genre>
-		<video_guide></video_guide>
-		<video_preview></video_preview>
-	</extension>
-</addon>
-
 <addon id="plugin.video.londonlive" name="London Live" version="0.4" provider-name="DoubleT">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
