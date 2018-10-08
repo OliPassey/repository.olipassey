@@ -127,7 +127,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.joeroganexperience" name="Joe Rogan Experience" version="0.1.3" provider-name="Oli Passey">
+<addon id="plugin.video.joeroganexperience" name="Joe Rogan Experience" version="0.1.4" provider-name="Oli Passey">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.python.koding.aio" version="0.0.1"/>
