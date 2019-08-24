@@ -27,9 +27,14 @@ YOUTUBE_CHANNEL_ID_6 = "PL9fPq3eQfaaBD_8E9PJ8yyiTL0JhynlGK"
 YOUTUBE_CHANNEL_ID_7 = "PL9fPq3eQfaaCIZajWLyN5f6M0HoU_Avuk"
 YOUTUBE_CHANNEL_ID_8 = "PL9fPq3eQfaaDcbIEMSzdL5yuzh_m6BB-E"
 YOUTUBE_CHANNEL_ID_9 = "PL9fPq3eQfaaD0cf5c7wkzMoj2kifzGO4U"
+YOUTUBE_CHANNEL_ID_9 = "PL9fPq3eQfaaA4qJEQQyXDYtTIfxCNA0wB"
 
 @route(mode='main_menu')
 def Main_Menu():
+    Add_Dir(
+        name="DEF CON 27 (2019)", url=BASE+YOUTUBE_CHANNEL_ID_10+"/", folder=True,
+        icon="https://www.defcon.org/images/defcon-27/dc-27-village.png")
+
     Add_Dir(
         name="DEF CON 26 (2018)", url=BASE+YOUTUBE_CHANNEL_ID_9+"/", folder=True,
         icon="https://www.defcon.org/images/defcon-26/post-images/defcon26-logo.png")
